@@ -49,9 +49,13 @@ public class ScreenSaverController extends BaseController {
     /**
      * Image array of all images used for Transition effect.
      */
-    Image[] images = { new Image("/com/hotelco/images/boracay.jpg"), new Image("/com/hotelco/images/pool.jpg"),
-            new Image("/com/hotelco/images/resort.jpg"), new Image("/com/hotelco/images/rocks.jpg"),
-            new Image("/com/hotelco/images/zanzibar.jpg"), };
+    Image[] images = { 
+        new Image("/com/hotelco/images/boracay.jpg"), 
+        new Image("/com/hotelco/images/pool.jpg"),
+        new Image("/com/hotelco/images/resort.jpg"), 
+        new Image("/com/hotelco/images/rocks.jpg"),
+        new Image("/com/hotelco/images/zanzibar.jpg")
+    };
 
     /**
      * This method is called immediately upon controller creation. It creates an
