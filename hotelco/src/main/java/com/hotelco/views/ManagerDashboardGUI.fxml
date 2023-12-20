@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane prefHeight="800.0" prefWidth="1300.0" styleClass="background" stylesheets="@../stylesheets/BackgroundSS.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hotelco.controllers.ManagerDashboardController">
+   <children>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0">
+         <right>
+            <AnchorPane fx:id="rightAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: green;" BorderPane.alignment="CENTER" />
+         </right>
+         <left>
+            <VBox alignment="TOP_CENTER" style="-fx-background-color: #3c4149;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="143.0" fitWidth="156.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/hotelco.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="30.0" top="30.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Button fx:id="revenueButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseReleased="#switchToRevenue" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: transparent;" text="Revenue" textAlignment="CENTER" textFill="#f9bd1a">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="90.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="vacancyButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseReleased="#switchToRoomVacancy" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: transparent;" text="Room Vacancy" textFill="#f9bd1a">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="90.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="allReservationsButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseReleased="#switchToAllReservactions" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: transparent;" text="All Reservations" textFill="#f9bd1a">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="90.0" />
+                     </padding>
+                  </Button>
+                  <VBox alignment="BOTTOM_CENTER" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Button mnemonicParsing="false" onMouseReleased="#switchToLoginScene" prefHeight="30.0" prefWidth="218.0" styleClass="redButton" stylesheets="@../stylesheets/ButtonSS.css" text="LOG OUT" textFill="WHITE">
+                           <font>
+                              <Font name="Britannic Bold" size="12.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="35.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+         </left>
+      </BorderPane>
+   </children>
+</StackPane>

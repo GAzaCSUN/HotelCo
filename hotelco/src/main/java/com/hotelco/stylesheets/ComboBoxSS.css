@@ -1,0 +1,9 @@
+.combo-box {
+    -fx-background-color: transparent;
+    -fx-border-width: 0 0 4 0;
+    -fx-border-color: white;
+}
+
+.combo-box-base .text {
+    -fx-fill: rgba(255, 255, 255, 0.7);
+}

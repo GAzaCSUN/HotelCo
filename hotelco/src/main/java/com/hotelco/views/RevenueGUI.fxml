@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #484d54;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hotelco.controllers.RevenueController">
+   <children>
+      <Text fill="#f9bd1a" layoutX="3.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Revenue ">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#6d7176" height="136.0" layoutX="7.0" layoutY="235.0" stroke="#1f1f1f00" strokeType="INSIDE" width="204.0" />
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#6d7176" height="386.0" layoutX="439.0" layoutY="186.0" stroke="#1f1f1f00" strokeType="INSIDE" width="447.0" />
+      <BarChart fx:id="revenueChart" layoutX="427.0" layoutY="204.0" legendSide="TOP" legendVisible="false" prefHeight="371.0" prefWidth="456.0" style=": \\;" styleClass="axis-tick-mark-text-node" stylesheets="@../stylesheets/BarChart.css" verticalGridLinesVisible="false">
+        <xAxis>
+          <CategoryAxis fx:id="month" side="BOTTOM" style="-fx-border-color: transparent;" styleClass="axis-tick-mark-text-node" tickLabelFill="WHITE" tickLength="100.0" tickMarkVisible="false">
+               <tickLabelFont>
+                  <Font name="System Bold" size="10.0" />
+               </tickLabelFont></CategoryAxis>
+        </xAxis>
+        <yAxis>
+          <NumberAxis minorTickCount="2" minorTickLength="2.0" minorTickVisible="false" side="LEFT" style="-fx-border-color: transparent;" tickLabelFill="WHITE" tickLabelGap="9.0" tickLength="2.0" tickMarkVisible="false" tickUnit="2.0" upperBound="900.0">
+               <tickLabelFont>
+                  <Font size="12.0" />
+               </tickLabelFont></NumberAxis>
+        </yAxis>
+      </BarChart>
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#6d7176" height="136.0" layoutX="5.0" layoutY="382.0" stroke="#1f1f1f00" strokeType="INSIDE" width="204.0" />
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#6d7176" height="136.0" layoutX="221.0" layoutY="381.0" stroke="#1f1f1f00" strokeType="INSIDE" width="204.0" />
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#6d7176" height="136.0" layoutX="221.0" layoutY="235.0" stroke="#1f1f1f00" strokeType="INSIDE" width="204.0" />
+      <Text fill="WHITE" layoutX="463.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Revenue per month">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Text>
+      <Text fill="WHITE" layoutX="250.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Yearly Revenue">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="37.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lifetime Revenue">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="35.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Weekly Revenue">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="250.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Daily Revenue">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="lifetimeRevenue" fill="WHITE" layoutX="5.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$" wrappingWidth="204.0">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Text fx:id="yearlyRevenue" fill="WHITE" layoutX="221.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$" wrappingWidth="204.0">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Text fx:id="weeklyRevenue" fill="WHITE" layoutX="5.0" layoutY="463.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$" wrappingWidth="204.0">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Text fx:id="dailyRevenue" fill="WHITE" layoutX="221.0" layoutY="462.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$" wrappingWidth="204.0">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

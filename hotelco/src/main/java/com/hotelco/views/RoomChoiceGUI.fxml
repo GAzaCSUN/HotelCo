@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hotelco.controllers.RoomChoiceController">
+   <children>
+      <HBox prefHeight="700.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #484d54; -fx-border-width: 0 2 0 0; -fx-border-color: #3c4149;">
+               <children>
+                  <Text fill="#f9bd1a" strokeType="OUTSIDE" strokeWidth="0.0" text="Suite">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Text>
+                  <ImageView fitHeight="175.0" fitWidth="225.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../images/suite.jpg" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Text fill="#f9bd1a" strokeType="OUTSIDE" strokeWidth="0.0" text="Features">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Text fx:id="suiteFlavor" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Text>
+                  <VBox alignment="BOTTOM_CENTER" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Text fill="#f9bd1a" strokeType="OUTSIDE" strokeWidth="0.0" text="Rate">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="suiteRate" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="25.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Button fx:id="suite" mnemonicParsing="false" onMouseReleased="#switchToBooking" prefHeight="30.0" prefWidth="200.0" styleClass="blueButton" stylesheets="@../stylesheets/ButtonSS.css" text="BOOK" textFill="WHITE">
+                           <font>
+                              <Font name="Britannic Bold" size="12.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="50.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #484d54;">
+               <children>
+                  <Text fill="#f9bd1a" strokeType="OUTSIDE" strokeWidth="0.0" text="King">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Text>
+                  <ImageView fitHeight="175.0" fitWidth="225.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../images/king.jpg" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Text fill="#f9bd1a" strokeType="OUTSIDE" strokeWidth="0.0" text="Features">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Text fx:id="kingFlavor" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <VBox alignment="BOTTOM_CENTER" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Text fill="#f9bd1a" strokeType="OUTSIDE" strokeWidth="0.0" text="Rate">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Text>
+                        <Text fx:id="kingRate" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="25.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Button fx:id="king" mnemonicParsing="false" onMouseReleased="#switchToBooking" prefHeight="30.0" prefWidth="200.0" styleClass="blueButton" stylesheets="@../stylesheets/ButtonSS.css" text="BOOK" textFill="WHITE">
+                           <font>
+                              <Font name="Britannic Bold" size="12.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="50.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #484d54; -fx-border-color: #3c4149; -fx-border-width: 0 0 0 2;">
+               <children>
+                  <Text fill="#f9bd1a" strokeType="OUTSIDE" strokeWidth="0.0" text="Queen">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Text>
+                  <ImageView fitHeight="175.0" fitWidth="225.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../images/queen.jpg" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Text fill="#f9bd1a" strokeType="OUTSIDE" strokeWidth="0.0" text="Features">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Text fx:id="queenFlavor" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Text>
+                  <VBox alignment="BOTTOM_CENTER" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Text fill="#f9bd1a" strokeType="OUTSIDE" strokeWidth="0.0" text="Rate">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="queenRate" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="25.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Button fx:id="queen" mnemonicParsing="false" onMouseReleased="#switchToBooking" prefHeight="30.0" prefWidth="200.0" styleClass="blueButton" stylesheets="@../stylesheets/ButtonSS.css" text="BOOK" textFill="WHITE">
+                           <font>
+                              <Font name="Britannic Bold" size="12.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="50.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #484d54; -fx-border-color: #3c4149; -fx-border-width: 0 0 0 2;">
+               <children>
+                  <Text fill="#f9bd1a" strokeType="OUTSIDE" strokeWidth="0.0" text="Double">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Text>
+                  <ImageView fitHeight="175.0" fitWidth="225.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../images/double.jpg" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Text fill="#f9bd1a" strokeType="OUTSIDE" strokeWidth="0.0" text="Features">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Text fx:id="dblFlavor" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets right="52.0" top="10.0" />
+                     </VBox.margin>
+                  </Text>
+                  <VBox alignment="BOTTOM_CENTER" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Text fill="#f9bd1a" strokeType="OUTSIDE" strokeWidth="0.0" text="Rate">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="dblRate" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="25.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Button fx:id="dbl" mnemonicParsing="false" onMouseReleased="#switchToBooking" prefHeight="30.0" prefWidth="200.0" styleClass="blueButton" stylesheets="@../stylesheets/ButtonSS.css" text="BOOK" textFill="WHITE">
+                           <font>
+                              <Font name="Britannic Bold" size="12.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="50.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

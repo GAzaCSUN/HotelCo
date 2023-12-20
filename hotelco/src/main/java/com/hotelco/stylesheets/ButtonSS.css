@@ -1,0 +1,59 @@
+.grayButton {
+    -fx-background-color: #484d54;
+    -fx-text-fill:  #f9bd1a;
+    -fx-border-color: gray;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+}
+
+.yellowButton {
+    -fx-background-color: #f9bd1a;
+    -fx-text-fill:  #484d54;
+    -fx-background-radius: 20;
+}
+
+.grayButton:pressed {
+    -fx-background-color: #f9bd1a;
+    -fx-text-fill:  #484d54;
+    -fx-border-radius: 0;
+    -fx-border-color: transparent;
+}
+
+.yellowButton:pressed {
+    -fx-background-color: #484d54;
+    -fx-text-fill:  #f9bd1a;
+    -fx-border-color: gray;
+    -fx-border-radius: 20;
+}
+
+.blueButton {
+    -fx-cursor: HAND;
+    -fx-background-color: #209FEE;
+    -fx-text-fill: white;
+    -fx-font-size: 12;
+    -fx-font-family: 'Britannic Bold';
+}
+
+.redButton {
+    -fx-cursor: HAND;
+    -fx-background-color: #FA1744;
+    -fx-text-fill: white;
+    -fx-font-size: 12;
+    -fx-font-family: 'Britannic Bold';
+}
+
+.transparentButton {
+    -fx-background-color: transparent;
+    -fx-border-radius: 10;
+    -fx-border-width: 1;
+    -fx-border-color: #484d54;
+    -fx-text-fill: white;
+}
+
+.transparentButton:hover {
+    -fx-border-color: rgba(255, 255, 255, 0.8);
+}
+
+.transparentButton:pressed {
+    -fx-border-color: rgba(255, 255, 255, 0.2);
+}

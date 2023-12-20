@@ -1,0 +1,26 @@
+.titled-pane {
+    -fx-background-color: transparent; 
+    -fx-text-fill: #f9bd1a; 
+    -fx-alignment: center;
+}
+
+.titled-pane .title {
+    -fx-font-size: 20px; 
+    -fx-background-color: transparent;
+}
+
+.titled-pane > .title > .arrow-button {
+    -fx-padding: 5px; 
+    -fx-alignment: center;
+    -fx-translate-x: 220;
+}
+
+.titled-pane:expanded > .title > .arrow-button {
+    -fx-padding: 5px; 
+}
+
+.titled-pane > *.content {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    
+}

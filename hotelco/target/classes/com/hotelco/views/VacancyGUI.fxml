@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #484d54;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hotelco.controllers.VacancyController">
+   <children>
+      <Text fill="#f9bd1a" layoutX="6.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vacancy">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#6d7176" height="193.0" layoutX="37.0" layoutY="448.0" stroke="#1f1f1f00" strokeType="INSIDE" width="280.0" />
+      <Text fill="WHITE" layoutX="54.0" layoutY="486.0" strokeType="OUTSIDE" strokeWidth="0.0" text="King  Vacancy">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#6d7176" height="193.0" layoutX="37.0" layoutY="207.0" stroke="#1f1f1f00" strokeType="INSIDE" width="280.0" />
+      <Text fill="WHITE" layoutX="61.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Queen Vacancy">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#6d7176" height="193.0" layoutX="342.0" layoutY="207.0" stroke="#1f1f1f00" strokeType="INSIDE" width="280.0" />
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#6d7176" height="193.0" layoutX="341.0" layoutY="448.0" stroke="#1f1f1f00" strokeType="INSIDE" width="280.0" />
+      <Text fill="WHITE" layoutX="366.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Double Vacancy">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="360.0" layoutY="485.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Suite Vacancy">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#6d7176" height="320.0" layoutX="663.0" layoutY="266.0" stroke="#1f1f1f00" strokeType="INSIDE" width="203.0" />
+      <Text fill="WHITE" layoutX="685.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Vacancy">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="queenInUse" fill="WHITE" layoutX="75.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Occupied:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="queenVacant" fill="WHITE" layoutX="75.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vacant:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="kingInUse" fill="WHITE" layoutX="71.0" layoutY="541.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Occupied:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="kingVacant" fill="WHITE" layoutX="72.0" layoutY="584.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vacant:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="doubleInUse" fill="WHITE" layoutX="377.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Occupied:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="doubleVacant" fill="WHITE" layoutX="378.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vacant:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="suiteInUse" fill="WHITE" layoutX="380.0" layoutY="541.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Occupied:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="suiteVacant" fill="WHITE" layoutX="380.0" layoutY="583.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vacant:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="totalInUse" fill="WHITE" layoutX="676.0" layoutY="364.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Occupied:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="totalVacant" fill="WHITE" layoutX="676.0" layoutY="422.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vacant:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="totalCheckIn" fill="WHITE" layoutX="676.0" layoutY="483.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Check-In:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="totalCheckOut" fill="WHITE" layoutX="676.0" layoutY="543.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Check-Out:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

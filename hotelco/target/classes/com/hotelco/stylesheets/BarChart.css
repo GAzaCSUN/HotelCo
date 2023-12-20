@@ -1,0 +1,7 @@
+.chart-plot-background {
+    -fx-background-color: transparent;
+}
+.axis-tick-mark-text-node {
+    -fx-text-alignment: center;
+    -fx-fill: red;
+}

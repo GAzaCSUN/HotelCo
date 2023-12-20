@@ -1,0 +1,54 @@
+.table-view {
+    -fx-table-cell-border-color: transparent;
+ }
+
+.table-row-cell {
+    -fx-background-color: #494e57;
+    -fx-text-background-color: white;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #f9bd1a;
+    -fx-background-radius: 7px 7px 7px 7px;
+}
+
+
+.table-view .column-header-background .filler {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: #494e57;
+    -fx-background-radius: 7px 7px 0px 0px;
+    -fx-padding: 0 0 5px 0;
+}
+
+.table-view .column-header{
+    -fx-text-background-color: white;
+}
+
+.table-view .virtual-flow .scroll-bar:vertical,
+.table-view .virtual-flow .scroll-bar:vertical .track,
+.table-view .virtual-flow .scroll-bar:vertical .track-background,
+.table-view .virtual-flow .scroll-bar:horizontal,
+.table-view .virtual-flow .scroll-bar:horizontal .track,
+.table-view .virtual-flow .scroll-bar:horizontal .track-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header .arrow {
+    -fx-background-color: white;
+}
+
+.table-row-cell-selectedtoggle {
+    -fx-background-color: #4cbb17;
+    -fx-text-background-color: white;
+}
+.table-row-cell.table-row-cell-selectedtoggle:hover {
+    -fx-background-color: #4cbb17;
+    -fx-background-radius: 7px 7px 7px 7px;
+}

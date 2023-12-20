@@ -1,0 +1,19 @@
+.normal-date-picker {
+    -fx-border-color: white;
+    -fx-border-width: 0 0 4 0;
+}
+
+.normal-date-picker > .text-field {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.red-date-picker {
+    -fx-border-color: #FF0000;
+    -fx-border-width: 0 0 4 0;
+}
+
+.red-date-picker > .text-field {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
