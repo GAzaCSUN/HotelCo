@@ -22,9 +22,11 @@ public class SendMail
 {
 	/**
 	 * Initializes a Session class to gather email properties and a
-	 * MimeMessage class to style an email message.
 	 */
 	Session newSession = null;
+	/**
+	 * MimeMessage class to style an email message.
+	 */
 	MimeMessage mimeMessage = null;
 	/**
 	 * The main method to send an email by taking in a String email, subject, and body, and setting up
