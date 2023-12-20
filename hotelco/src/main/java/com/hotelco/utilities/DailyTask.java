@@ -7,7 +7,7 @@ import java.util.Date;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import com.hotelco.constants.Constants;
+import com.hotelco.administrator.Settings;
 import com.hotelco.constants.MsTime;
 import com.hotelco.constants.Tasks;
 import com.hotelco.entities.Reservation;
@@ -78,7 +78,7 @@ public class DailyTask {
      * Schedules all the daily tasks
      */
     public static void scheduleDailyTasks(){        
-        new DailyTask(Constants.CHECK_OUT_TIME, Tasks.DAILY_CHECK_OUT);
-        new DailyTask(Constants.NO_SHOW_TIME, Tasks.CANCEL_NO_SHOWS);
+        new DailyTask(Settings.CHECK_OUT_TIME, Tasks.DAILY_CHECK_OUT);
+        new DailyTask(Settings.NO_SHOW_TIME, Tasks.CANCEL_NO_SHOWS);
     }
 }

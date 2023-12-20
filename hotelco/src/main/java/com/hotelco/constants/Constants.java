@@ -1,7 +1,6 @@
 package com.hotelco.constants;
 
 import java.math.BigDecimal;
-import java.time.LocalTime;
 import java.util.AbstractMap;
 import java.util.HashMap;
 import java.util.Map;
@@ -12,19 +11,6 @@ import java.util.stream.Stream;
  * @author Daniel Schwartz, John Lee
  */
 public final class Constants {
-    /**
-     * Standard check in time
-     */
-    public static final LocalTime CHECK_IN_TIME = LocalTime.of(19, 0, 0);
-    /**
-     * Standard check out time
-     */
-    public static final LocalTime CHECK_OUT_TIME = LocalTime.of(14, 34, 0);
-    /**
-     * The time at which a reservation booked for today, but isn't checked in,
-     * gets cancelled.
-     */
-    public static final LocalTime NO_SHOW_TIME = LocalTime.of(23, 50, 0);
     /**
      * Maximum capacity of a double room. 
      */

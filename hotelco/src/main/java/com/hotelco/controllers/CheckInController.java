@@ -8,7 +8,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.ArrayList;
 
-import com.hotelco.constants.Constants;
+import com.hotelco.administrator.Settings;
 import com.hotelco.entities.Reservation;
 import com.hotelco.entities.ReservationSystem;
 import com.hotelco.utilities.DatabaseUtil;
@@ -189,7 +189,7 @@ public class CheckInController extends BaseController {
         if (!selectedReservations.isEmpty()) {
             for (Reservation reservation : selectedReservations) {
                 if (LocalDateTime.now().isAfter(
-                    LocalDateTime.of(LocalDate.now(), Constants.CHECK_IN_TIME))) {
+                    LocalDateTime.of(LocalDate.now(), Settings.CHECK_IN_TIME))) {
                     reservation.setIsCheckedIn(true);
                     reservation.push();
                     ConfirmationController cc = (ConfirmationController) Instances.getDashboardController()
@@ -211,7 +211,7 @@ public class CheckInController extends BaseController {
 
     private void notification() {
         notifcation.setText("Thank you for your early arrival! Our check-in time is set for "
-                + Constants.CHECK_IN_TIME.format(DateTimeFormatter.ofPattern("hh:mm a")));
+                + Settings.CHECK_IN_TIME.format(DateTimeFormatter.ofPattern("hh:mm a")));
         notifcation.setFill(Color.RED);
         Timeline timeline = new Timeline(new KeyFrame(Duration.seconds(10), ae -> directions()));
         timeline.play();

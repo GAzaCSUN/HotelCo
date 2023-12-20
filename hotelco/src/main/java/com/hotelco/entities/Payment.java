@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
-import com.hotelco.constants.Constants;
+import com.hotelco.administrator.Settings;
 import com.hotelco.utilities.DatabaseUtil;
 import com.hotelco.utilities.ReservationCalculator;
 /**
@@ -70,7 +70,7 @@ public class Payment {
         Reservation temp = ReservationSystem.getCurrentReservation();
         
         ReservationSystem.setCurrentReservation(reservation);
-        if (LocalTime.now().isBefore(Constants.CHECK_OUT_TIME)
+        if (LocalTime.now().isBefore(Settings.CHECK_OUT_TIME)
             && LocalDate.now().isBefore(reservation.getEndDate())){
             reservation.setEndDate(LocalDate.now());
             reservation.push();
